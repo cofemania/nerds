@@ -22,7 +22,6 @@ body {
     padding: 0 20px;
     width: 83.3333%;
     min-height: 114px;
-    background: fuchsia;
 }
 
 .logo {
@@ -53,7 +52,6 @@ body {
     margin: 0;
     padding: 0;
     margin-bottom: 15px;
-    background: darkcyan;
 }
 
 .navigator-center li {
