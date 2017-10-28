@@ -97,7 +97,7 @@ body {
 
 /*slider*/
 .slider {
-    background: forestgreen;
+    background: #eeeeee;
     width: 100%;
     padding: 0 140px;
 }
@@ -133,9 +133,25 @@ body {
 }
 
 .slide1 {
-    background: gold url("../img/slide1.png") no-repeat bottom right 31px;
+    background: transparent url("../img/slide1.png") no-repeat bottom right 31px;
 }
 .slide1 h2,
 .slide1 p {
     width: 380px;
+}
+
+.slide2 {
+    background: transparent url("../img/slide2.png") no-repeat bottom right;
+}
+.slide2 h2,
+.slide2 p {
+    width: 517px;
+}
+
+.slide3 {
+    background: transparent url("../img/slide3.png") no-repeat bottom right;    
+}
+.slide3 h2,
+.slide3 p {
+    width: 411px;
 }
