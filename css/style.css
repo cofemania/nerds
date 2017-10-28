@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     width: auto;
+    font-weight: 500;
 }
 
 /*header*/
@@ -39,7 +40,6 @@ body {
     font-size: 16px;
     line-height: 30px;
     text-transform: uppercase;
-    font-weight: 500;
 }
 
 .navigator-center {
@@ -97,7 +97,45 @@ body {
 
 /*slider*/
 .slider {
-    background: #eeeeee;
+    background: forestgreen;
     width: 100%;
-    padding: 0 120px;
+    padding: 0 140px;
+}
+
+.slide {
+    height: 354px;
+    padding-top: 77px;
+}
+.slide h2 {
+    font-size: 55px;
+    line-height: 55px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 23px;
+}
+.slide p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 41px;
+}
+.about {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 17px 54px 15px;
+    text-decoration: none;
+    background: #fb565a;
+    color: white;
+    border-radius: 3px;
+}
+
+.slide1 {
+    background: gold url("../img/slide1.png") no-repeat bottom right 31px;
+}
+.slide1 h2,
+.slide1 p {
+    width: 380px;
 }
