@@ -84,3 +84,16 @@ body {
     top: 7px;
     left: 0;
 }
+
+/*----------------------------------*/
+
+/*index-main*/
+.index-main {
+    width: 83.3333%;
+    display: flex;
+    padding: 0 20px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/*slider*/
