@@ -70,10 +70,11 @@ body {
 }
 
 .basket {
-    align-items: flex-end;
+    margin-top: auto;
     margin-bottom: 15px;
     padding-left: 41px;
     position: relative;
+    background: forestgreen;
 }
 
 .basket::after {
