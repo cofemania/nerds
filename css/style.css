@@ -17,10 +17,11 @@ body {
 .navigator {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px 0 30px;
+    padding: 0 20px;
     margin: 0 auto;
+    padding-top: 50px;
     width: 83.3333%;
-    min-height: 114px;
+    min-height: 65px;
 }
 
 .logo {
