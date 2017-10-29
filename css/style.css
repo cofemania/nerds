@@ -97,20 +97,26 @@ body {
 
 /*slider*/
 .slider {
-    background: #eeeeee;
-    width: 100%;
-    padding: 0 140px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80.5555%;
+    height: 431px;
+    position: relative;
 }
 
 .slide {
-    height: 354px;
-    padding-top: 77px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .slide h2 {
     font-size: 55px;
     line-height: 55px;
     padding: 0;
     margin: 0;
+    margin-top: 77px;
     margin-bottom: 23px;
 }
 .slide p {
@@ -132,26 +138,73 @@ body {
     border-radius: 3px;
 }
 
-.slide1 {
-    background: transparent url("../img/slide1.png") no-repeat bottom right 31px;
+.slide:nth-child(1) {
+    background: transparent url("../img/slide1.png") no-repeat bottom  right 31px;
 }
-.slide1 h2,
-.slide1 p {
+.slide:nth-child(1) h2,
+.slide:nth-child(1) p {
     width: 380px;
 }
 
-.slide2 {
+.slide:nth-child(2) {
     background: transparent url("../img/slide2.png") no-repeat bottom right;
 }
-.slide2 h2,
-.slide2 p {
+.slide:nth-child(2) h2,
+.slide:nth-child(2) p {
     width: 517px;
 }
 
-.slide3 {
+.slide:nth-child(3) {
     background: transparent url("../img/slide3.png") no-repeat bottom right;    
 }
-.slide3 h2,
-.slide3 p {
+.slide:nth-child(3) h2,
+.slide:nth-child(3) p {
     width: 411px;
 }
+
+.slider-controls {
+    width: 88px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    top: 318px;
+    z-index: 1000;
+}
+.slider-controls label {
+    position: relative;
+    cursor: pointer;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border:7px solid white;
+    border-radius: 50%;
+}
+
+.slider-controls input[type="radio"]:checked + label::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border: 2px solid #c1c1c1;
+    border-radius: 50%;
+    cursor: pointer;
+    top: -2px;
+    left: -2px;
+}
+
+
+.slider-controls input {
+    display: none;
+}
+
+.slide {
+    display: none;
+}
+
+.slide:nth-child(3) {
+    display: block;
+}
+
