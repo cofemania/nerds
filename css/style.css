@@ -87,14 +87,6 @@ body {
 
 /*----------------------------------*/
 
-/*index-main*/
-.index-main {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-}
-
 /*slider*/
 .slider {
     margin-right: auto;
@@ -216,4 +208,18 @@ body {
 }
 #slide-btn3:checked ~ .slides .slide:nth-child(3) {
     display: block;
+}
+
+/*------------------------------------------*/
+/*index-main*/
+.index-main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 80.5555%
+}
+
+.products {
+
 }
