@@ -395,7 +395,7 @@ border-radius: 3px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .features-right p {
@@ -431,4 +431,33 @@ border-radius: 3px;
     color: #283136;
     text-transform: none;
     vertical-align: right;
+}
+
+/*--------------------------------*/
+
+/*projects*/
+.projects {
+    width: 80.5555%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.project {
+    text-decoration: none;
+    width: 25%;
+    height: 177px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project span {
+    display: none;
+}
+
+.project img {
+    opacity: 0.2;
 }
