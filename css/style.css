@@ -360,3 +360,32 @@ border-radius: 3px;
     text-transform: uppercase;
     color: black;
 }
+
+.features-left ul {
+    margin: 0;
+    padding: 0;
+}
+
+.features-left li {
+    margin: 0;
+    padding: 0;
+    padding-left: 37px;
+    list-style: none;
+    margin-bottom: 29px;
+    position: relative;
+}
+
+.features-left li:last-child {
+    margin-bottom: 0;
+}
+.features-left li::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #fb565a;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
