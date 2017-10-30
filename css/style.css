@@ -215,13 +215,13 @@ body {
 .index-main {
     display: flex;
     flex-wrap: wrap;
-    margin: 0  auto;
     padding: 0;
-    width: 80.5555%
+    width: 100%;
+    justify-content: center;
 }
 
 .products {
-    width: 100%;
+    width: 80.5555%;
     display: flex;
     margin-top: 80px;
     padding: 0;
@@ -277,4 +277,24 @@ border-radius: 3px;
 
 .product:last-child a {
     background: #efc84a;
+}
+
+/*---------------------------------*/
+
+.features {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 76px;
+    padding-top: 40px;
+    border-bottom: 2px solid #eeeeee;
+    width: 80.5555%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-left {
+    width: 660px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 43px;
 }
