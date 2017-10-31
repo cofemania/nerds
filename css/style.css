@@ -573,6 +573,47 @@ border-radius: 3px;
     line-height: 18px;
     color: #444444;
     vertical-align: middle;
+}
 
+/*-----------------------*/
 
+/*modal*/
+
+.modal {
+    width: 760px;
+    background: white;
+    display: flex;
+    position: fixed;
+    left: 15%;
+    flex-wrap: wrap;
+    bottom: 180px;
+    padding: 70px 100px 86px;
+    box-shadow: 0 20px 40px 0px rgba(0, 0, 0, 0.75);
+}
+
+.modal h2 {
+    flex-basis: auto;
+    font-size: 45px;
+    line-height: 45px;
+    margin: 0;
+    padding: 0;
+}
+
+.modal input[type="text"],
+.modal input[type="email"],
+.modal textarea {
+    padding: 16px 14px;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+    flex-basis: 360px;
+    align-self: flex-end;
+}
+
+.modal label {
+    flex-basis: 360px;
+    align-self: flex-start;
+}
+
+.modal textarea {
+    width: 728px;
 }
