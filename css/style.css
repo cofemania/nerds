@@ -605,13 +605,12 @@ border-radius: 3px;
     padding: 16px 14px;
     border: 2px solid #d7dcde;
     border-radius: 3px;
-    flex-basis: 360px;
-    align-self: flex-end;
+    width: 328px;
 }
 
 .modal label {
-    flex-basis: 360px;
-    align-self: flex-start;
+    display: inline-block;
+    width: 360px;
 }
 
 .modal textarea {
