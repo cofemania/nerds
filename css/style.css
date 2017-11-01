@@ -584,9 +584,10 @@ border-radius: 3px;
     background: white;
     display: flex;
     position: fixed;
+    z-index: 1500;
     left: 15%;
+    bottom: 40px;
     flex-wrap: wrap;
-    bottom: 180px;
     padding: 70px 100px 86px;
     box-shadow: 0 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
@@ -596,7 +597,17 @@ border-radius: 3px;
     font-size: 45px;
     line-height: 45px;
     margin: 0;
+    margin-bottom: 48px;
     padding: 0;
+}
+
+.modal div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+    justify-content: space-between;
+
 }
 
 .modal input[type="text"],
@@ -611,8 +622,55 @@ border-radius: 3px;
 .modal label {
     display: inline-block;
     width: 360px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    margin-bottom: 9px;
 }
 
 .modal textarea {
     width: 728px;
+}
+
+.modal input[type="submit"] {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 17px 84px 15px 82px;
+    border: none;
+    background: #fb565a;
+    color: white;
+    border-radius: 3px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 78px;
+    right: 90px;
+    font-size: 0;
+    border: 0;
+    background: 0 0;
+    cursor: pointer;
+    outline: 0
+}
+
+.modal-close::after,
+.modal-close::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 26px;
+    height: 5px;
+    border-radius: 1px;
+    background: rgba(259, 86, 90, 0.3);
+    top: 8px;
+    left: -1px
+}
+
+.modal-close::after {
+    transform: rotate(45deg);
+}
+
+.modal-close::before {
+    transform: rotate(-45deg);
 }
