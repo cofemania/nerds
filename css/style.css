@@ -81,6 +81,20 @@ body {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.current {
+    position: relative;
+}
+
+.current::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fb565a;
+    bottom: -9px;
+}
+
 .basket {
     margin-top: auto;
     margin-bottom: 15px;
@@ -580,9 +594,13 @@ border-radius: 3px;
 /*modal*/
 
 .modal {
+    display: none;
+}
+
+.modal-open {
+    display: flex;
     width: 760px;
     background: white;
-    display: flex;
     position: fixed;
     z-index: 1500;
     left: 15%;
@@ -590,10 +608,6 @@ border-radius: 3px;
     flex-wrap: wrap;
     padding: 70px 100px 86px;
     box-shadow: 0 20px 40px 0px rgba(0, 0, 0, 0.75);
-}
-
-.modal-open {
-    display: flex;
 }
 
 .modal h2 {
@@ -680,3 +694,5 @@ border-radius: 3px;
 .modal-close::before {
     transform: rotate(-45deg);
 }
+
+/*======================================*/
