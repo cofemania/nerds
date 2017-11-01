@@ -158,6 +158,15 @@ body {
     border-radius: 3px;
 }
 
+.about:hover {
+    background: #e74246;
+}
+
+.about:active {
+    color: rgba(255, 255, 255, 0.3);
+    background: #d7373b;
+}
+
 .slide:nth-child(1) {
     background: transparent url("../img/slide1.png") no-repeat bottom  right 31px;
 }
@@ -312,12 +321,39 @@ background: #fb565a;
 border-radius: 3px;
 }
 
+.product:first-child a:hover {
+    background: #e74246;
+}
+
+.product:first-child a:active {
+    color: rgba(255, 255, 255, 0.3);
+    background: #d7373b;
+} 
+
 .product:nth-child(2) a {
     background: #00ca74;
 }
 
+.product:nth-child(2) a:hover {
+    background: #00bc6c;
+}
+
+.product:nth-child(2) a:active {
+    background: #00aa62;
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .product:last-child a {
     background: #efc84a;
+}
+
+.product:last-child a:hover {
+    background: #eab534;
+}
+
+.product:last-child a:active {
+    color: rgba(255, 255, 255, 0.3);
+    background: #e5a722;
 }
 
 /*---------------------------------*/
@@ -480,6 +516,10 @@ border-radius: 3px;
 .project:hover img {
     opacity: 1;
 }
+
+.project:active img {
+    opacity: 0.1;
+}
 /*------------------------------*/
 
 /*map*/
@@ -533,6 +573,16 @@ border-radius: 3px;
     border-radius: 3px;
 }
 
+.about-us a:hover {
+    background: #e74246;
+}
+
+.about-us a:active {
+    color: rgba(255, 255, 255, 0.3);
+    background: #d7373b;
+} 
+
+
 /*-----------------------------*/
 
 /*footer*/
@@ -559,17 +609,41 @@ border-radius: 3px;
     display: block;
     width: 79px;
     height: 79px;
-    background: #e1e1e1 url("../img/sprites.png") no-repeat 0 -173px;
+    background: #e1e1e1 url("../img/sprites.png") no-repeat;
     border-radius: 50%;
+}
+
+.vk {
+    background-position:  0 -173px;
+}
+.vk:hover {
+    background: #e74246 url("../img/sprites.png") no-repeat 0 -173px;
+}
+.vk:active {
+    background: #d7373b url("../img/sprites.png") no-repeat 0 -173px;
 }
 
 .fb {
     background-position: 0 -15px;
 }
+.fb:hover {
+    background: #e74246 url("../img/sprites.png") no-repeat 0 -15px;
+}
+.fb:active {
+    background: #d7373b url("../img/sprites.png") no-repeat 0 -15px;
+}
 
 .ins {
     background-position: 0 -94px;
 }
+.ins:hover {
+    background: #e74246 url("../img/sprites.png") no-repeat 0 -94px;
+}
+.ins:active {
+    background: #d7373b url("../img/sprites.png") no-repeat 0 -94px;
+    
+}
+
 
 .frends {
     margin-right: 18%;
@@ -610,7 +684,7 @@ border-radius: 3px;
     box-shadow: 0 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
 
-.modal h2 {
+.modal-open h2 {
     flex-basis: auto;
     font-size: 45px;
     line-height: 45px;
@@ -619,7 +693,7 @@ border-radius: 3px;
     padding: 0;
 }
 
-.modal div {
+.modal-open div {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -628,16 +702,27 @@ border-radius: 3px;
 
 }
 
-.modal input[type="text"],
-.modal input[type="email"],
-.modal textarea {
+.modal-open input[type="text"],
+.modal-open input[type="email"],
+.modal-open textarea {
     padding: 16px 14px;
     border: 2px solid #d7dcde;
     border-radius: 3px;
     width: 328px;
 }
+.modal-open input[type="text"]:hover,
+.modal-open input[type="email"]:hover,
+.modal-open textarea:hover {
+    border-color: #b4b9bb;
+}
 
-.modal label {
+.modal-open input[type="text"]:focus,
+.modal-open input[type="email"]:focus,
+.modal-open textarea:focus {
+    border-color: #000000;
+}
+
+.modal-open label {
     display: inline-block;
     width: 360px;
     font-size: 16px;
@@ -646,11 +731,11 @@ border-radius: 3px;
     margin-bottom: 9px;
 }
 
-.modal textarea {
+.modal-open textarea {
     width: 728px;
 }
 
-.modal input[type="submit"] {
+.modal-open input[type="submit"] {
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
@@ -684,7 +769,8 @@ border-radius: 3px;
     border-radius: 1px;
     background: rgba(259, 86, 90, 0.3);
     top: 8px;
-    left: -1px
+    left: -1px;
+    cursor: pointer;
 }
 
 .modal-close::after {
@@ -695,4 +781,13 @@ border-radius: 3px;
     transform: rotate(-45deg);
 }
 
+.modal-close:hover::after,
+.modal-close:hover::before {
+    background: rgba(259, 86, 90, 1);
+}
+
+.modal-close:active::after,
+.modal-close:active::before {
+    background: rgba(259, 86, 90, 0.1);
+}
 /*======================================*/
