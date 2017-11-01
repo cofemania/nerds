@@ -592,6 +592,10 @@ border-radius: 3px;
     box-shadow: 0 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
 
+.modal-open {
+    display: flex;
+}
+
 .modal h2 {
     flex-basis: auto;
     font-size: 45px;
@@ -641,12 +645,14 @@ border-radius: 3px;
     background: #fb565a;
     color: white;
     border-radius: 3px;
+    margin: 0;
+    margin-top: 45px;
 }
 
 .modal-close {
     position: absolute;
-    top: 78px;
-    right: 90px;
+    top: 85px;
+    right: 100px;
     font-size: 0;
     border: 0;
     background: 0 0;
