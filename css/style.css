@@ -803,7 +803,7 @@ border-radius: 3px;
     border: 0;
     background: 0 0;
     cursor: pointer;
-    outline: 0
+    outline: 0;
 }
 
 .modal-close::after,
