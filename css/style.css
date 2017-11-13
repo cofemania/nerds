@@ -793,7 +793,16 @@ border-radius: 3px;
     border-radius: 3px;
     margin: 0;
     margin-top: 45px;
+    cursor: pointer;
 }
+.modal-open input[type="submit"]:hover {
+    background: #e74246;
+}
+
+.modal-open input[type="submit"]:active {
+    color: rgba(255, 255, 255, 0.3);
+    background: #d7373b;
+} 
 
 .modal-close {
     position: absolute;
