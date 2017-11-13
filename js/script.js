@@ -3,13 +3,13 @@ var close = popup.querySelector(".modal-close");
 var link = document.querySelector(".open-modal");
 
 link.addEventListener("click", function(event) {
-    event.preventDefault;
+    event.preventDefault();
     popup.classList.remove("modal");
     popup.classList.add("modal-open");
 });
 
 close.addEventListener("click", function(event) {
-    event.preventDefault;
+    event.preventDefault();
     popup.classList.remove("modal-open");
     popup.classList.add("modal");
 });

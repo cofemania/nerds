@@ -806,6 +806,7 @@ border-radius: 3px;
 
 .modal-close {
     position: absolute;
+    height: 16px;
     top: 85px;
     right: 100px;
     font-size: 0;
