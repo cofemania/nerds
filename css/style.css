@@ -201,6 +201,7 @@ body {
             justify-content: space-between;
     position: absolute;
     left: 50%;
+    margin-right: -44px;
     top: 318px;
     z-index: 1000;
 }
