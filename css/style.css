@@ -132,6 +132,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    padding-left: 14px;
 }
 .slide h2 {
     font-size: 55px;
@@ -147,7 +148,7 @@ body {
     color: #283136;
     padding: 0;
     margin: 0;
-    margin-bottom: 52px;
+    margin-bottom: 56px;
 }
 .about {
     font-size: 16px;
@@ -286,6 +287,10 @@ body {
 .product {
     width: 300px;
     padding-right: 60px;
+}
+
+.product:first-child {
+    
 }
 
 .product h2 {
