@@ -888,6 +888,7 @@ border-radius: 3px;
     flex-wrap: wrap;
     width: 260px;
     margin-left: 140px;
+    margin-top: 60px;
 }
 .range-filter {
     width: 100%;
@@ -956,6 +957,8 @@ border-radius: 3px;
 
 .filter fieldset {
     border: none;
+    margin: 0;
+    padding: 0;
 }
 
 .filter legend {
@@ -981,7 +984,8 @@ border-radius: 3px;
     padding: 0;
 }
 
-.filter fieldset:nth-child(2) label {
+.filter fieldset:nth-child(2) label,
+.filter fieldset:nth-child(3) label {
     font-family: inherit;
     position: relative;
     margin: 0;
@@ -995,7 +999,8 @@ border-radius: 3px;
     cursor: pointer;
 }
 
-.filter fieldset:nth-child(2) input {
+.filter fieldset:nth-child(2) input,
+.filter fieldset:nth-child(3) input {
     display: none;
 }
 
@@ -1025,4 +1030,42 @@ border-radius: 3px;
     z-index: 2;
     top: 4px;
     left: 9px;
+}
+
+.filter fieldset:nth-child(3) input:not(:checked) + label::after {
+    position: absolute;
+    top: -3px;
+    left: 1px;
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url("../img/checkbox-off.png") no-repeat center;    
+    content: "";
+    z-index: 1;
+    cursor: pointer;
+}
+
+.filter fieldset:nth-child(3) input:checked + label::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 27px;
+    height: 23px;
+    top: -3px;
+    left: 1px;
+    background: url("../img/checkbox-on.png") no-repeat center;
+}
+
+.filter input[type="submit"] {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 18px;
+    border: none;
+    margin: 0;
+    padding: 17px 89px;
+    background: #eeeeee;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
 }
