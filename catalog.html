@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Nerds главная</title>
+        <title>Nerds каталог</title>
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <link rel="stylesheet" href="css/normalize.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -32,19 +32,33 @@
         <main class="catalog-main">
             <section class="filter">
                 <form action="#" method="get" name="filter-form" id="filter-form">
-                    <div class="range-filter">
-                        <div class="range-controls">
-                            <div class="scale">
-                                <div class="bar" style="width:70%;"></div>
+                    <fieldset>
+                        <legend>Стоимость:</legend>
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar" style="width:70%;"></div>
+                                </div>
+                                <div class="toggle min-toggle"></div>
+                                <div class="toggle max-toggle"></div>
                             </div>
-                            <div class="toggle min-toggle"></div>
-                            <div class="toggle max-toggle"></div>
+                            <div class="price-controls">
+                                <label for="min-price">ОТ</label> 
+                                <input class="min-price" id="min-price" type="text" value="0">
+                                <label for="max-price">ДО</label>
+                                <input class="max-price" id="max-prise" type="text" value="15 000">
+                            </div>
                         </div>
-                        <div class="price-controls">
-                            ОТ <input class="min-price" type="text" value="0">
-                            ДО <input class="max-price" type="text" value="15 000">
-                        </div>
-                    </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Сетка:</legend>
+                        <input type="radio" name="grid" id="adaptive">
+                        <label for="adaptive">Адаптивная</label>
+                        <input type="radio" name="grid" id="fixed">
+                        <label for="fixed">Фиксированная</label>
+                        <input type="radio" name="grid" id="rubber">
+                        <label for="rubber">Резиновая</label>
+                    </fieldset>
                 </form>
             </section>
             <section class="map">

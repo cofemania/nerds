@@ -946,3 +946,14 @@ border-radius: 3px;
 .price-controls {
     white-space: nowrap;
 }
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
