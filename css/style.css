@@ -21,9 +21,11 @@ body {
     vertical-align: middle;
     text-align: center;
     font-size: 55px;
-    line-height: 65px;
+    line-height: 55px;
+    margin: 0;
+    padding: 0;
     margin-top: 75px;
-    margin-block-end: 103px;
+    padding-bottom: 103px;
     font-weight: bold;
 }
 
@@ -85,11 +87,11 @@ body {
 }
 
 
-.navigator a:hover {
+.navigator a:not(.current):hover {
     color: #fb565a;
 }
 
-.navigaror a:active {
+.navigaror a:not(.current):active {
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -869,3 +871,78 @@ border-radius: 3px;
     background: rgba(259, 86, 90, 0.1);
 }
 /*======================================*/
+
+/*catalog*/
+.catalog-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*----------------------------------*/
+
+/*filter*/
+.range-filter {
+    width: 260px;
+}
+
+.range-controls {
+    position: relative;
+    height: 80px;
+    margin-bottom: 15px;
+    padding: 0 21px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.range-controls .scale {
+    margin-top: 39px;
+    height: 2px;
+    background: #d7dcde;
+}
+
+.range-controls .bar {
+    height: 2px;
+    background: #00ca74;
+}
+
+.range-controls .toggle {
+    width: 4px;
+    height: 4px;
+    border: 8px solid white;
+    background: #ababab;
+    border-radius: 50px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    cursor: pointer;
+}
+
+.range-controls .max-toggle {
+    left: 165px;
+}
+
+.price-controls input {
+    width: 60px;
+    padding: 8px 10px;
+    margin-left: 10px;
+    border: none;
+    background: #f1f1f1;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: #283136;
+    border-radius: 5px;
+}
+
+.price-controls .min-price {
+    margin-right: 24px;
+}
+
+.price-controls {
+    white-space: nowrap;
+}

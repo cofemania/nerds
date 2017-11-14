@@ -19,7 +19,7 @@
                         <a href="#">Клиенты</a>
                     </li>
                     <li>
-                        <a href="#" class="current">Магазин</a>
+                        <a class="current">Магазин</a>
                     </li>
                     <li>
                         <a href="#">Контакты</a>
@@ -28,3 +28,67 @@
                 <a class="basket" href="#">Корзина</a>
             </nav>
             <h2>Магазин готовых шаблонов</h2>
+        </header>
+        <main class="catalog-main">
+            <section class="filter">
+                <form action="#" method="get" name="filter-form" id="filter-form">
+                    <div class="range-filter">
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar" style="width:70%;"></div>
+                            </div>
+                            <div class="toggle min-toggle"></div>
+                            <div class="toggle max-toggle"></div>
+                        </div>
+                        <div class="price-controls">
+                            ОТ <input class="min-price" type="text" value="0">
+                            ДО <input class="max-price" type="text" value="15 000">
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <section class="map">
+                <div class="about-us">
+                    <h2>NЁRDS DESIGN STUDIO</h2>
+                    <p>191186, Санкт-Петербург, 
+                        ул. Б. Конюшенная, д. 19/8</p>
+                    <p>тел. +7 (812) 275-75-75</p>
+                    <a class="open-modal" href="#">Напишите нам</a>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="social-group">
+                <a href="#" class="social vk">
+                    <span>Vkontakte</span>
+                </a>
+                <a href="#" class="social fb">
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="social ins">
+                    <span>Instagram</span>
+                </a>
+            </div>
+            <div class="frends">
+                <b>Давайте дружить, это выгодно!</b>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+        </footer>
+        <div class="modal">
+            <button class="modal-close">x</button>
+            <h2>Напишите нам</h2>
+            <form action="#" method="get" name="modal-form" id="modal-form">
+                <div>    
+                    <label for="name">Ваше имя:</label>
+                    <label for="email">Ваш e-mail:</label>
+                    <input type="text" name="name" id="name" form="modal-form" placeholder="Представьтесь пожалуйста">
+                    <input type="email" name="email" id="email" form="modal-form" placeholder="Для отправки ответа">
+                </div>
+                    <label for="letter">Текст письма:</label>
+                <textarea name="letter" id="letter" rows="6" form="modal-form" placeholder="В свободной форме"></textarea>
+                <input type="submit" name="submit" value="Отправить" id="submit" form="modal-form">
+            </form>
+        </div>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
