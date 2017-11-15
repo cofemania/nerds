@@ -1078,3 +1078,12 @@ border-radius: 3px;
     cursor: pointer;
     border-radius: 5px;
 }
+/*-----------------------------*/
+
+/*portfolio*/
+.portfolio {
+    display: flex;
+    width: 760px;
+    flex-wrap: wrap;
+    margin-right: 120px;
+}
