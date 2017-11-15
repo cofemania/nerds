@@ -1040,6 +1040,29 @@ border-radius: 3px;
     top: 4px;
     left: 9px;
 }
+.filter label:hover {
+    color: #000000;
+}
+.filter fieldset:nth-child(2) label:hover::after {
+    border-color: rgba(77, 77, 77, 1);
+}
+
+
+.filter fieldset:nth-child(2) input:checked + label:hover::before {
+background: rgba(77, 77, 77, 1);
+}
+
+.filter input:disabled + label {
+    color: rgba(0, 0, 0, 0.1);
+}
+.filter fieldset:nth-child(2) input:disabled+ label::after {
+    border-color: rgba(77, 77, 77, 0.1);
+}
+
+
+.filter fieldset:nth-child(2) input:checked:disabled + label:hover::before {
+background: rgba(77, 77, 77, 0.1);
+}
 
 .filter fieldset:nth-child(3) input:not(:checked) + label::after {
     position: absolute;
@@ -1049,9 +1072,19 @@ border-radius: 3px;
     width: 23px;
     height: 23px;
     background: url("../img/checkbox-off.png") no-repeat center;    
+    opacity: 0.4;
     content: "";
     z-index: 1;
     cursor: pointer;
+}
+.filter fieldset:nth-child(3) input:not(:checked) + label:hover::after,
+.filter fieldset:nth-child(3) input:checked + label:hover::after {
+    opacity: 1;
+}
+
+.filter fieldset:nth-child(3) input:not(:checked):disabled + label::after,
+.filter fieldset:nth-child(3) input:checked:disabled + label:::after {
+    opacity: 0.1;
 }
 
 .filter fieldset:nth-child(3) input:checked + label::after {
@@ -1063,20 +1096,34 @@ border-radius: 3px;
     top: -3px;
     left: 1px;
     background: url("../img/checkbox-on.png") no-repeat center;
+    opacity: 0.4;
 }
 
 .filter input[type="submit"] {
     font-family: inherit;
     font-size: 16px;
     line-height: 18px;
-    border: none;
+    font-weight: 500;
+    border: 3px solid #eeeeee;
     margin: 0;
-    padding: 17px 89px;
+    padding: 14px 86px;
     background: #eeeeee;
     color: black;
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.filter input[type="submit"]:hover {
+    background: #dfdfdf;
+    border-color: #dfdfdf;
+}
+
+.filter input[type="submit"]:active {
+    background: #d5d5d5;
+    border-color: #d5d5d5;
+    color: rgba(0, 0, 0, 0.3);
+    border-top-color: #bfbfbf;
 }
 /*-----------------------------*/
 
@@ -1157,15 +1204,19 @@ border-radius: 3px;
 }
 
 .portfolio-item .item-about {
-    opacity: 1;
     position: absolute;
     left: 0;
     bottom: 0;
-    opacity: 1;
+    opacity: 0;
     width: 240px;
     background: #eeeeee;
     padding: 0 60px;
     padding-bottom: 43px;
+    transition: all 0.3s;
+}
+
+.portfolio-item:hover .item-about {
+    opacity: 1;
 }
 
 .item-about h2 {
@@ -1206,6 +1257,15 @@ border-radius: 3px;
     text-decoration: none;
 }
 
+.item-about a:hover {
+    background: #e74246;
+}
+
+.item-about a:active {
+    color: rgba(255, 255, 255, 0.3);
+    background: #d7373b;
+} 
+
 .page-counter {
     display: flex;
     justify-content: space-between;
@@ -1238,6 +1298,7 @@ border-radius: 3px;
     background: #d5d5d5;
     border-color: #d5d5d5;
     color: rgba(0, 0, 0, 0.3);
+    border-top-color: #bfbfbf;
 }
 
 .page-counter a.active-page {
