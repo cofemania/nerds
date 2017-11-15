@@ -1086,4 +1086,40 @@ border-radius: 3px;
     width: 760px;
     flex-wrap: wrap;
     margin-right: 120px;
+    justify-content: space-between;
+}
+
+.portfolio .sort {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.portfolio-item {
+    padding-top: 40px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.portfolio-item img {
+    position: relative;
+}
+
+.portfolio-item::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 40px;
+    background: url("../img/browser.png") no-repeat center;
+}
+
+.portfolio-item .item-about {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
 }
