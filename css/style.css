@@ -1085,6 +1085,7 @@ border-radius: 3px;
     display: flex;
     width: 760px;
     flex-wrap: wrap;
+    margin: 0;
     margin-right: 120px;
     justify-content: space-between;
 }
@@ -1093,6 +1094,27 @@ border-radius: 3px;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.sort-by a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+}
+
+.sort p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .portfolio-item {
@@ -1114,6 +1136,7 @@ border-radius: 3px;
     width: 360px;
     height: 40px;
     background: url("../img/browser.png") no-repeat center;
+    opacity: 0.12;
 }
 
 .portfolio-item .item-about {
