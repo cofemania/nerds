@@ -1322,6 +1322,7 @@ background: rgba(77, 77, 77, 0.1);
     line-height: 18px;
     text-transform: uppercase;
     font-weight: 700;
+    white-space: nowrap;
     color: white;
     vertical-align: center;
     background: #fb565a;
