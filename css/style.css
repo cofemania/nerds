@@ -892,7 +892,7 @@ border-radius: 3px;
 }
 
 .filter fieldset:nth-child(1) {
-    margin-bottom: 60px;
+    margin-bottom: 55px;
 }
 
 
@@ -973,6 +973,7 @@ border-radius: 3px;
     line-height: 30px;
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .filter fieldset:nth-child(2) {
@@ -980,7 +981,7 @@ border-radius: 3px;
     flex-direction: column;
     width: 160px;
     margin: 0;
-    margin-bottom: 48px;
+    margin-bottom: 23px;
     padding: 0;
 }
 
@@ -993,13 +994,17 @@ border-radius: 3px;
     padding: 0;
 }
 
+.filter fieldset:nth-child(3) legend {
+    letter-spacing: 1px;
+}
+
 .filter fieldset:nth-child(2) label,
 .filter fieldset:nth-child(3) label {
     font-family: inherit;
     position: relative;
     margin: 0;
-    margin-top: 22px;
-    margin-bottom: 22px;
+    margin-top: 18px;
+    margin-bottom: 20px;
     padding: 0;
     padding-left: 36px;
     font-size: 16px;
