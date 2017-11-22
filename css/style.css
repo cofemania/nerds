@@ -874,9 +874,14 @@ border-radius: 3px;
 
 /*catalog*/
 .catalog-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 /*----------------------------------*/
@@ -884,8 +889,11 @@ border-radius: 3px;
 /*filter*/
 
 .filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 260px;
     margin-left: 140px;
     margin-top: 60px;
@@ -931,7 +939,8 @@ border-radius: 3px;
     position: absolute;
     top: 30px;
     left: 20px;
-    box-shadow: 0 2px 1px 0 #cfcfcf;
+    -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+            box-shadow: 0 2px 1px 0 #cfcfcf;
     cursor: pointer;
 }
 
@@ -977,8 +986,13 @@ border-radius: 3px;
 }
 
 .filter fieldset:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 160px;
     margin: 0;
     margin-bottom: 23px;
@@ -987,8 +1001,13 @@ border-radius: 3px;
 
 .filter fieldset:nth-child(3) {
     width: 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0;
     margin-bottom: 27px;
     padding: 0;
@@ -1134,17 +1153,26 @@ background: rgba(77, 77, 77, 0.1);
 
 /*portfolio*/
 .portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 763px;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0;
     margin-right: 120px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .portfolio .sort {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
     margin: 0;
     margin-top: 66px;
@@ -1153,8 +1181,12 @@ background: rgba(77, 77, 77, 0.1);
 
 .sort-by {
     width: 364px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .sort-by a {
@@ -1221,11 +1253,14 @@ background: rgba(77, 77, 77, 0.1);
     background: #eeeeee;
     padding: 0 60px;
     padding-bottom: 49px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
 .portfolio-item:hover {
-    box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.25);
+            box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.25);
 }
 .portfolio-item:hover .item-about {
     opacity: 1;
@@ -1282,8 +1317,12 @@ background: rgba(77, 77, 77, 0.1);
 } 
 
 .page-counter {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 443px;
     margin-bottom: 60px;
     margin-top: 25px;
