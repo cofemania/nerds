@@ -1,5 +1,17 @@
 /* Put your CSS code in the left column, instead of example, to put or remove unnecessary prefixes. */
 
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    font-weight: 700;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
 html,
 body {
     font-family: "Roboto", "Arial", sans-serif;
@@ -18,6 +30,7 @@ body {
 }
 
 .main-header h2 {
+    font-family: "Roboto-Bold", "Arial", sans-serif;
     vertical-align: middle;
     text-align: center;
     font-size: 55px;
@@ -306,6 +319,7 @@ body {
 }
 
 .product h2 {
+    font-family: "Roboto-Bold", "Arial", sans-serif;
     margin: 0;
     margin-top: 15px;
     margin-bottom: 21px;
@@ -492,6 +506,7 @@ border-radius: 3px;
 }
 
 .features-right span:first-child {
+    font-family: "Roboto-Bold", "Arial", sans-serif;
     text-transform: uppercase;
     font-size: 45px;
     line-height: 87px;
@@ -591,6 +606,7 @@ border-radius: 3px;
 }
 
 .about-us h2 {
+    font-family: "Roboto-Bold", "Arial", sans-serif;
     text-transform: uppercase;
     font-size: 18px;
     line-height: 18px;
@@ -706,6 +722,7 @@ border-radius: 3px;
 }
 
 .frends b {
+    font-family: "Roboto-Bold", "Arial", sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 36px;
@@ -789,6 +806,7 @@ border-radius: 3px;
 }
 
 .modal-open label {
+    font-family: "Roboto-Bold", "Arial", sans-serif;
     display: inline-block;
     width: 360px;
     font-size: 16px;
@@ -978,6 +996,7 @@ border-radius: 3px;
 }
 
 .filter legend {
+    font-family: "Roboto-Bold", "Arial", sans-serif;
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
@@ -1214,6 +1233,7 @@ background: rgba(77, 77, 77, 0.1);
 }
 
 .sort p {
+    font-family: "Roboto-Bold", "Arial", sans-serif;
     margin: 0;
     padding: 0;
     font-size: 18px;
@@ -1270,6 +1290,7 @@ background: rgba(77, 77, 77, 0.1);
 }
 
 .item-about h2 {
+    font-family: "Roboto-Bold", "Arial", sans-serif;
     margin: 0;
     margin-top: 22px;
     padding: 0;
@@ -1292,6 +1313,7 @@ background: rgba(77, 77, 77, 0.1);
 }
 
 .item-about a {
+    font-family: "Roboto-Bold", "Arial", sans-serif;
     display: block;
     margin: 0 auto;
     width: 80px;
@@ -1329,6 +1351,7 @@ background: rgba(77, 77, 77, 0.1);
 }
 
 .page-counter a {
+    font-family: "Roboto-Bold", "Arial", sans-serif;
     display: inline-block;
     color: black;
     font-size: 16px;
