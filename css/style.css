@@ -1148,7 +1148,7 @@ background: rgba(77, 77, 77, 0.1);
     width: 100%;
     margin: 0;
     margin-top: 66px;
-    margin-bottom: 60px;
+    margin-bottom: 56px;
 }
 
 .sort-by {
@@ -1178,7 +1178,7 @@ background: rgba(77, 77, 77, 0.1);
 }
 
 .sort-by a:last-child {
-    margin-left: 5px;
+    margin-left: -3px;
 }
 
 .sort p {
@@ -1193,7 +1193,7 @@ background: rgba(77, 77, 77, 0.1);
 .portfolio-item {
     padding-top: 40px;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .portfolio-item img {
@@ -1220,7 +1220,7 @@ background: rgba(77, 77, 77, 0.1);
     width: 240px;
     background: #eeeeee;
     padding: 0 60px;
-    padding-bottom: 43px;
+    padding-bottom: 49px;
     transition: all 0.3s;
 }
 
@@ -1236,10 +1236,10 @@ background: rgba(77, 77, 77, 0.1);
 
 .item-about h2 {
     margin: 0;
-    margin-top: 33px;
+    margin-top: 22px;
     padding: 0;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 42px;
     font-weight: 800;
     text-align: center;
     text-transform: uppercase;
@@ -1247,10 +1247,10 @@ background: rgba(77, 77, 77, 0.1);
 
 .item-about p {
     font-size: 16px;
-    line-height: 18px;
+    line-height: 19px;
     margin: 0;
-    margin-top: 20px;
-    margin-bottom: 23px;
+    margin-top: 8px;
+    margin-bottom: 28px;
     padding: 0;
     text-align: center;
     color: #666666;
@@ -1286,6 +1286,7 @@ background: rgba(77, 77, 77, 0.1);
     justify-content: space-between;
     width: 443px;
     margin-bottom: 60px;
+    margin-top: 25px;
 }
 
 .page-counter a {
