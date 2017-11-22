@@ -1215,7 +1215,13 @@ background: rgba(77, 77, 77, 0.1);
     transition: all 0.3s;
 }
 
+.portfolio-item:hover {
+    box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.25);
+}
 .portfolio-item:hover .item-about {
+    opacity: 1;
+}
+.portfolio-item:hover::after {
     opacity: 1;
 }
 
