@@ -1049,6 +1049,7 @@ border-radius: 3px;
     line-height: 20px;
     color: #283136;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .filter fieldset:nth-child(2) input,
